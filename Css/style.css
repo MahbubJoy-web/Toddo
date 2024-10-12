@@ -1,0 +1,105 @@
+body{
+    width:100% ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F7;
+    flex-direction: column;
+    gap: 20px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 400px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+.main input{
+    width: 300px;
+    height: 38px;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 400px;
+    font-family: cursive;
+    padding-left: 20px ;
+    border: none;
+    outline: none;
+}
+.main input::placeholder{
+    color: #FF6600;
+}
+.main button{
+    width: 60px;
+    height: 39px;
+    border: none;
+    outline: none;
+    background: #FF6600;
+    font-size: 18px;
+    font-weight: 400;
+    font-family:  'monospace';
+}
+.main button:active{
+    transform: scale(.9);
+    outline: 2px solid #000;
+}
+.toddo_list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.singletoddo{
+    width: 400px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+.toddolistinput{
+    outline: none;
+    border: none;
+    width: 280px;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 500;
+    background: transparent;
+    padding-left: 10px;
+}
+.listdelete {
+    width: 50px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: #B8001F;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.listEdit{
+    width: 50px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: #b2b800;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 10px;
+}
+.Error{
+    width: 80px;
+    box-shadow: -6px 1px 54px 18px rgba(232,0,0,0.74) inset;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    display: none;
+}
